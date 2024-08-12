@@ -1,0 +1,40 @@
+.container {
+  margin-top: 4rem;
+}
+
+h2 {
+  color: #343a40; 
+}
+
+form {
+  background-color: #f8f9fa; 
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #6c757d;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #343a40; 
+}
+
+.form-control-sm {
+  border-color: #343a40; 
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-dark:hover {
+  background-color: #23272b; 
+  border-color: #1d2124;
+}
+
+.alert {
+  margin-top: 1rem;
+}

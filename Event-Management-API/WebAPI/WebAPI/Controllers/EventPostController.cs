@@ -1,0 +1,226 @@
+﻿
+
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Reflection.Metadata.Ecma335;
+using WebAPI.Models;
+using WebAPI.Models.DTOs;
+using WebAPI.Services.Interface;
+using WebAPI.Services.Repos;
+
+namespace WebAPI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    
+    public class EventPostController : ControllerBase
+    {
+        private readonly IFileService _fileService;
+        private readonly IEventPostRepository _eventPost;
+        private readonly ILogger<EventPostController> _logger;
+        private readonly ICategoryRepository _categoryRepository;
+
+        public EventPostController(IFileService fileService, IEventPostRepository eventPost, ILogger<EventPostController> logger , ICategoryRepository categoryRepository)
+        {
+            _fileService = fileService;
+            _eventPost = eventPost;
+            _logger = logger;
+            _categoryRepository = categoryRepository;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetEventPost()
+        {
+            var eposts = await _eventPost.GetEventPostsAsync();
+            
+            var EventPostDto = new List<EventPostListDTO>(); 
+            foreach (var epost in eposts)
+            {
+                var category = await _categoryRepository.FindCategoryByIdAsync(epost.CategoryId);
+
+                var EventDto = new EventPostListDTO
+                {
+                    Id = epost.Id,
+                    EventName = epost.EventName,
+                    EventDescription = epost.EventDescription,
+                    Location = epost.Location,
+                    CreatedDate = epost.CreatedDate,
+                    EndDate = epost.EndDate,
+                    CategoryId = epost.CategoryId,
+                    CategoryName = category?.CategoryName,
+                    ImageFile = $"{Request.Scheme}://{Request.Host}/uploads/{epost.ProductImage}"
+
+
+            };
+                
+               EventPostDto.Add(EventDto);
+            }
+
+            return Ok(EventPostDto);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetEventPost(int id)
+        {
+            var epost = await _eventPost.FindEventPostByIdAsync(id);
+            if (epost == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound, $"Event with id: {id} not found");
+            }
+            epost.ProductImage = $"{Request.Scheme}://{Request.Host}/uploads/{epost.ProductImage}";
+
+
+            return Ok(epost);
+        }
+
+
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> CreateEventPost([FromForm] EventPostDTO eventToAdd)
+        {
+            try
+            {
+                // Validate image file size
+                if (eventToAdd.ImageFile?.Length > 1 * 1024 * 1024)
+                {
+                    return BadRequest(new { message = "File size should not exceed 1 MB" });
+                }
+
+                // Define allowed file extensions
+                string[] allowedFileExtensions = { ".jpg", ".jpeg", ".png" };
+
+                // Save uploaded image using FileService
+                string createdImageName = await _fileService.SaveFileAsync(eventToAdd.ImageFile, allowedFileExtensions);
+
+                // Find category by name (assuming it's implemented in _categoryRepository)
+                var category = await _categoryRepository.FindCategoryByNameAsync(eventToAdd.CategoryName);
+                if (category == null)
+                {
+                    return NotFound(new { message = $"Category with name: {eventToAdd.CategoryName} not found" });
+                }
+
+                // Create EventPost object
+                var eventPost = new EventPost
+                {
+                    EventName = eventToAdd.EventName,
+                    EventDescription = eventToAdd.EventDescription,
+                    Location = eventToAdd.Location,
+                    CreatedDate = eventToAdd.CreatedDate, 
+                    EndDate = eventToAdd.EndDate,
+                    CategoryId = category.Id,
+                    ProductImage = createdImageName
+                };
+
+                // Add EventPost to repository
+                var createdEventPost = await _eventPost.AddEventPostAsync(eventPost);
+
+                // Return created EventPost with HTTP 201 Created status
+                return CreatedAtAction(nameof(GetEventPost), new { id = createdEventPost.Id }, createdEventPost);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error creating event post");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+
+
+
+
+        [HttpPut("{id}")]
+        [Authorize]
+        public async Task<IActionResult> UpdateEventPost(int id, [FromForm] EventPostUpdateDTO eventToUpdate)
+        {
+            try
+            {
+                if (id != eventToUpdate.Id)
+                {
+                    return BadRequest(new { message = "ID in URL and body do not match" });
+                }
+
+                var existingEventPost = await _eventPost.FindEventPostByIdAsync(id);
+                if (existingEventPost == null)
+                {
+                    return NotFound(new { message = $"Event with id: {id} not found" });
+                }
+
+                string oldImage = existingEventPost.ProductImage;
+                if (eventToUpdate.ImageFile != null)
+                {
+                    if (eventToUpdate.ImageFile?.Length > 1 * 1024 * 1024)
+                    {
+                        return BadRequest(new { message = "File size should not exceed 1 MB" });
+                    }
+                    string[] allowedFileExtensions = { ".jpg", ".jpeg", ".png" };
+                    string newImageName = await _fileService.SaveFileAsync(eventToUpdate.ImageFile, allowedFileExtensions);
+                    eventToUpdate.ProductImage = newImageName;
+                }
+
+                existingEventPost.EventName = eventToUpdate.EventName;
+                existingEventPost.EventDescription = eventToUpdate.EventDescription;
+                existingEventPost.Location = eventToUpdate.Location;
+                existingEventPost.CreatedDate = eventToUpdate.CreatedDate;
+                existingEventPost.EndDate = eventToUpdate.EndDate;
+                existingEventPost.ProductImage = eventToUpdate.ProductImage;
+
+                var updatedEventPost = await _eventPost.UpdateEventPostAsync(existingEventPost);
+
+                if (eventToUpdate.ImageFile != null)
+                {
+                    _fileService.DeleteFile(oldImage);
+                }
+
+                return Ok(updatedEventPost);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating event post");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+        [HttpDelete("{id}")]
+        [Authorize]
+        public async Task<IActionResult> DeleteEventPost(int id)
+        {
+            try
+            {
+                var existingEventPost = await _eventPost.FindEventPostByIdAsync(id);
+                if (existingEventPost == null)
+                {
+                    return NotFound(new { message = $"Event with id: {id} not found" });
+                }
+
+                await _eventPost.DeleteEventPostAsync(existingEventPost);
+
+                // Delete associated image file
+                _fileService.DeleteFile(existingEventPost.ProductImage);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error deleting event post");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
+        }
+        [HttpGet("/events/count")]
+        public async Task<IActionResult> GetEventCount()
+        {
+            try
+            {
+                int count = await _eventPost.GetEventCount(); // Ensure this method exists in EventPostService
+                return Ok(count);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Something went wrong");
+            }
+        }
+
+    }
+}
+

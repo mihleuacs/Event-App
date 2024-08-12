@@ -1,0 +1,39 @@
+<div class="container mt-4" style="max-width: 80%; margin: auto;">
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+  <table class="table table-sm table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Event Name</th>
+        <th>Description</th>
+        <th>Location</th>
+        <th>Event Start</th>
+        <th>Event End</th>
+        <th>Category</th>
+        <th>Image</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <td>{{ event.id }}</td>
+        <td>{{ event.eventName }}</td>
+        <td>{{ event.eventDescription }}</td>
+        <td>{{ event.location }}</td>
+        <td>{{ event.createdDate | date }}</td>
+        <td>{{ event.endDate | date }}</td>
+        <td>{{ event.categoryName }}</td>
+        <td>
+          <img *ngIf="event.imageFile" [src]="event.imageFile" alt="Event Image" class="img-thumbnail" style="max-width: 100px;">
+        </td>
+        <td>
+          <div class="d-flex">
+            <button class="btn btn-info btn-sm me-1" (click)="editEvent(event.id)">Edit</button>
+            <button class="btn btn-danger btn-sm ms-1" (click)="deleteEvent(event.id)">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

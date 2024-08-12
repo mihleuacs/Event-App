@@ -1,0 +1,70 @@
+.blurred {
+  filter: blur(5px);
+  pointer-events: none; 
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; 
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.row.align-items-center {
+  background-color: #f7f7f7; 
+  padding: 15px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.form-label {
+  font-weight: bold;
+  font-size: 0.875rem; 
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333; 
+}
+
+
+.form-control-sm,
+.form-select-sm {
+  height: 2.5rem; 
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s ease-in-out; 
+}
+
+
+.form-control-sm:focus,
+.form-select-sm:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+/* Optional: Style the Placeholder Text */
+.form-control-sm::placeholder,
+.form-select-sm::placeholder {
+  color: #999; 
+}
+
+
+.mb-2 {
+  margin-bottom: 1rem !important; 
+}

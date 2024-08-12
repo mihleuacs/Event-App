@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-3 px-4">
+  <a class="navbar-brand" routerLink="/">
+    <img src="assets/Images/slika1.jpeg" alt="EventViewer" class="navbar-logo">
+    <span class="navbar-brand-text">EventGO</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" *ngIf="!isAuthenticated">
+        <a class="nav-link font-size-lg" routerLink="/home">
+          <i class="bi bi-house-door"></i> All Events
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-size-lg" routerLink="/about">
+          <i class="bi bi-info-circle"></i> About
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="!isAuthenticated">
+        <a class="nav-link font-size-lg" routerLink="/register">
+          <i class="bi bi-person-plus"></i> Register
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="!isAuthenticated">
+        <a class="nav-link font-size-lg" routerLink="/login">
+          <i class="bi bi-box-arrow-in-right"></i> Login
+        </a>
+      </li>
+      <ng-container *ngIf="isAdmin">
+        <li class="nav-item">
+          <a class="nav-link font-size-lg" routerLink="/create-event">
+            <i class="bi bi-plus-circle"></i> Create Event
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-size-lg" routerLink="/my-events">
+            <i class="bi bi-calendar-check"></i> My Events
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-size-lg" routerLink="/admin">
+            <i class="bi bi-bar-chart"></i> Stats
+          </a>
+        </li>
+      </ng-container>
+      <li class="nav-item" *ngIf="isAuthenticated">
+        <a class="nav-link font-size-lg">
+          <i class="bi bi-person-circle"></i> {{ username }}
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="isAuthenticated">
+        <a class="nav-link font-size-lg" (click)="logout()">
+          <i class="bi bi-box-arrow-right"></i> Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

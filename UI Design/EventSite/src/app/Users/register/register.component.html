@@ -1,0 +1,57 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-lg border-light">
+        <div class="card-header bg-primary text-white text-center">
+          <h2>Register</h2>
+        </div>
+        <div class="card-body p-4">
+          <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+            <div class="form-group mb-3 position-relative">
+              <label for="name">Name</label>
+              <input type="text" class="form-control pl-5" id="name" placeholder="Enter your name" required [(ngModel)]="registerModel.name" name="name">
+              <i class="bi bi-person-fill position-absolute" style="left: 15px; top: 35px;"></i>
+            </div>
+            <div class="form-group mb-3 position-relative">
+              <label for="email">Email</label>
+              <input type="email" class="form-control pl-5" id="email" placeholder="Enter your email" required [(ngModel)]="registerModel.email" name="email">
+              <i class="bi bi-envelope-fill position-absolute" style="left: 15px; top: 35px;"></i>
+            </div>
+            <div class="form-group mb-4 position-relative">
+              <label for="password">Password</label>
+              <input 
+                type="password" 
+                class="form-control pl-5" 
+                id="password" 
+                placeholder="Enter a strong password" 
+                required 
+                [(ngModel)]="registerModel.password" 
+                name="password" 
+                pattern="^(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" 
+                #password="ngModel"
+                (input)="checkPasswordStrength()"
+              >
+              <i class="bi bi-lock-fill position-absolute" style="left: 15px; top: 35px;"></i>
+              <div class="password-strength-bar mt-2">
+                <div 
+                  class="password-strength-fill" 
+                  [ngClass]="{
+                    'weak': strength === 'weak',
+                    'medium': strength === 'medium',
+                    'strong': strength === 'strong'
+                  }"
+                  [style.width]="strengthBarWidth"
+                ></div>
+              </div>
+              <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger mt-2">
+                <div *ngIf="password.errors?.['required']">Password is required.</div>
+                <div *ngIf="password.errors?.['pattern']">Password must be at least 8 characters long and contain at least one symbol.</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" [disabled]="registerForm.invalid">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

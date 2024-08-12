@@ -1,0 +1,50 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4 text-primary">Admin Dashboard</h2>
+
+  <!-- User Count Box -->
+  <div class="row mb-4">
+    <div class="col-md-6 mb-4">
+      <div class="card bg-light border-primary">
+        <div class="card-body">
+          <h5 class="card-title">Total Users</h5>
+          <p class="card-text">{{ userCount }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Count Box -->
+    <div class="col-md-6 mb-4">
+      <div class="card bg-light border-success">
+        <div class="card-body">
+          <h5 class="card-title">Total Events</h5>
+          <p class="card-text">{{ eventCount }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Users Table -->
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ maskEmail(user.email) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+    {{ errorMessage }}
+  </div>
+</div>

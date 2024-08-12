@@ -1,0 +1,39 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4 text-primary">Edit Event</h2>
+  <form (ngSubmit)="onSubmit()" #editEventForm="ngForm" class="bg-white p-4 rounded shadow-lg" style="max-width: 600px; margin: auto; border: 1px solid #dcdcdc;">
+    <div class="form-group mb-3">
+      <label for="eventName" class="form-label"><i class="bi bi-calendar-event text-primary"></i> Event Name</label>
+      <input type="text" id="eventName" class="form-control form-control-sm border-primary" [(ngModel)]="eventModel.eventName" name="eventName" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="eventDescription" class="form-label"><i class="bi bi-pencil-square text-primary"></i> Event Description</label>
+      <textarea id="eventDescription" class="form-control form-control-sm border-primary" [(ngModel)]="eventModel.eventDescription" name="eventDescription" required></textarea>
+    </div>
+    <div class="form-group mb-3">
+      <label for="location" class="form-label"><i class="bi bi-geo-alt text-primary"></i> Location</label>
+      <input type="text" id="location" class="form-control form-control-sm border-primary" [(ngModel)]="eventModel.location" name="location" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="createdDate" class="form-label"><i class="bi bi-calendar-check text-primary"></i> Created Date</label>
+      <input type="datetime-local" id="createdDate" class="form-control form-control-sm border-primary" [(ngModel)]="eventModel.createdDate" name="createdDate" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="endDate" class="form-label"><i class="bi bi-calendar-x text-primary"></i> End Date</label>
+      <input type="datetime-local" id="endDate" class="form-control form-control-sm border-primary" [(ngModel)]="eventModel.endDate" name="endDate" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="categoryName" class="form-label"><i class="bi bi-tags text-primary"></i> Category Name</label>
+      <select id="categoryName" class="form-control form-control-sm border-primary" [(ngModel)]="eventModel.categoryName" name="categoryName" required>
+        <option *ngFor="let category of categories" [value]="category.categoryName">{{ category.categoryName }}</option>
+      </select>
+    </div>
+    <div class="form-group mb-4">
+      <label for="imageFile" class="form-label"><i class="bi bi-image text-primary"></i> Event Image</label>
+      <input type="file" id="imageFile" class="form-control form-control-sm border-primary" (change)="onFileChange($event)" name="imageFile">
+    </div>
+    <button type="submit" class="btn btn-primary w-100 shadow-sm">Update Event</button>
+  </form>
+  <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+    {{ errorMessage }}
+  </div>
+</div>

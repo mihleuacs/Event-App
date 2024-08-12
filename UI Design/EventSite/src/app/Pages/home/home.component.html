@@ -1,0 +1,64 @@
+<div class="container" *ngIf="isLoggedIn()">
+  <div class="row align-items-center mb-3">
+    <!-- Search Bar -->
+    <div class="col-sm-12 col-md-4 mb-2">
+      <label for="searchInput" class="form-label">Search by Event Name</label>
+      <input type="text" id="searchInput" class="form-control form-control-sm" [(ngModel)]="searchTerm" (input)="onSearch()" placeholder="Search by event name...">
+    </div>
+
+    <!-- Category Filter -->
+    <div class="col-sm-12 col-md-4 mb-2">
+      <label for="categorySelect" class="form-label">Filter by Category</label>
+      <select id="categorySelect" class="form-select form-select-sm" (change)="onCategoryChange($event)">
+        <option value="">All Categories</option>
+        <option *ngFor="let category of categories" [value]="category.id">
+          {{ category.categoryName }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Date Picker Filter -->
+    <div class="col-sm-12 col-md-4 mb-2">
+      <label for="startDate" class="form-label">Start Date</label>
+      <input type="text" id="startDate" class="form-control form-control-sm" [ngModel]="formattedStartDate" (ngModelChange)="onStartDateChange($event)" placeholder="dd/mm/yyyy">
+    </div>
+  </div>
+
+ 
+</div>
+
+<div [ngClass]="{'blurred': showPopup}" class="container mt-4">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let event of filteredEvents">
+      <div class="card" style="width: 100%; max-width: 300px; height: auto;">
+        <div class="card-img-wrapper" style="position: relative; padding-top: 100%;">
+          <img [src]="event.imageFile" class="card-img" alt="{{ event.eventName }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="card-body p-2">
+          <h5 class="card-title fs-6">{{ event.eventName }}</h5>
+        </div>
+        <div class="card-footer p-2">
+          <small class="text-muted">Location: {{ event.location }}</small><br>
+          <div class="text-end" *ngIf="isLoggedIn()">
+            <button class="btn btn-sm btn-light" (click)="onEventClick(event)">
+              <i class="bi bi-eye"></i> View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Event Detail -->
+<div class="popup-overlay" *ngIf="showPopup">
+  <div class="popup-content">
+    <h5 class="popup-title">{{ selectedEvent?.eventName }}</h5>
+    <img [src]="selectedEvent?.imageFile" class="img-fluid mb-3" alt="{{ selectedEvent?.eventName }}">
+    <p><strong>Description:</strong> {{ selectedEvent?.eventDescription }}</p>
+    <p><strong>Location:</strong> {{ selectedEvent?.location }}</p>
+    <p><strong>Starting Date:</strong> {{ selectedEvent?.createdDate | date:'dd/MM/yyyy HH:mm' }}</p>
+    <p><strong>End Date:</strong> {{ selectedEvent?.endDate | date:'dd/MM/yyyy HH:mm' }}</p>
+    <button type="button" class="btn btn-secondary" (click)="closePopup()">Close</button>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+body {
+  background-color: #f8f9fa; 
+}
+
+.container {
+  padding-top: 5rem;
+}
+
+.card {
+  border-radius: 0.75rem; 
+}
+
+.card-header {
+  border-radius: 0.75rem 0.75rem 0 0;
+  background: linear-gradient(45deg, #007bff, #0056b3); 
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  padding-left: 2.5rem; 
+  border-color: #ced4da; 
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); 
+}
+
+.bi {
+  font-size: 1.3rem;
+  color: #6c757d;
+}
+
+.password-strength-bar {
+  height: 8px;
+  background-color: #e9ecef; 
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.password-strength-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.password-strength-fill.weak {
+  background-color: red;
+}
+
+.password-strength-fill.medium {
+  background-color: orange; 
+}
+
+.password-strength-fill.strong {
+  background-color: green;
+}

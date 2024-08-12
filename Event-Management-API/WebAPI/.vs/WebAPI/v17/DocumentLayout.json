@@ -1,0 +1,385 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\signupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\signupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\repos\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\repos\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\interface\\ieventpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\interface\\ieventpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\repos\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\repos\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\dtos\\eventpostlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\dtos\\eventpostlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\dtos\\eventpostupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\dtos\\eventpostupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\dtos\\eventpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\dtos\\eventpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\controllers\\eventpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\eventpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\eventpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\eventpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\repos\\eventpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\repos\\eventpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\repos\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\repos\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|c:\\users\\aleksandar\\desktop\\planb\\event-management-system-app\\webapi\\webapi\\services\\interface\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FE9CB6-64F5-4CB0-85A6-0F5E351DF508}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\interface\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEventPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Interface\\IEventPostRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Interface\\IEventPostRepository.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Interface\\IEventPostRepository.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Interface\\IEventPostRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T09:59:38.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Repos\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\CategoryRepository.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Repos\\CategoryRepository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowDEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T23:49:35.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventPostListDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\EventPostListDTO.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\DTOs\\EventPostListDTO.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\EventPostListDTO.cs",
+              "RelativeToolTip": "WebAPI\\Models\\DTOs\\EventPostListDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T23:35:54.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwD8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T23:31:58.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\CategoryUpdateDTO.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\DTOs\\CategoryUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\CategoryUpdateDTO.cs",
+              "RelativeToolTip": "WebAPI\\Models\\DTOs\\CategoryUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T23:18:40.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\DTOs\\CategoryDTO.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\CategoryDTO.cs",
+              "RelativeToolTip": "WebAPI\\Models\\DTOs\\CategoryDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T23:18:36.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WebAPI\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T23:12:15.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\FileService.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Repos\\FileService.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\FileService.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Repos\\FileService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDcAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:01:18.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EventPost.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\EventPost.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\EventPost.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\EventPost.cs",
+              "RelativeToolTip": "WebAPI\\Models\\EventPost.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T22:00:55.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Interface\\IAuthService.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Interface\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Interface\\IAuthService.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Interface\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T21:42:07.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "WebAPI\\Models\\LoginResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:39:24.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-30T10:49:04.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAuwHkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T10:47:25.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\LoginModel.cs",
+              "RelativeToolTip": "WebAPI\\Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T10:47:19.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\AuthService.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Repos\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\AuthService.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Repos\\AuthService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowG4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T10:46:53.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignupModel.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\SignupModel.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\SignupModel.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\SignupModel.cs",
+              "RelativeToolTip": "WebAPI\\Models\\SignupModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T10:30:50.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwFMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T10:29:52.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EventPostController.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Controllers\\EventPostController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\EventPostController.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Controllers\\EventPostController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\EventPostController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAADIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:30:56.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EventPostUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\EventPostUpdateDTO.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\DTOs\\EventPostUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\EventPostUpdateDTO.cs",
+              "RelativeToolTip": "WebAPI\\Models\\DTOs\\EventPostUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:30:48.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EventPostDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\EventPostDTO.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\DTOs\\EventPostDTO.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Models\\DTOs\\EventPostDTO.cs",
+              "RelativeToolTip": "WebAPI\\Models\\DTOs\\EventPostDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:30:42.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EventPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\EventPostRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Repos\\EventPostRepository.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Repos\\EventPostRepository.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Repos\\EventPostRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:30:27.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Interface\\IFileService.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\Interface\\IFileService.cs",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\PlanB\\Event-Management-System-App\\WebAPI\\WebAPI\\Services\\Interface\\IFileService.cs",
+              "RelativeToolTip": "WebAPI\\Services\\Interface\\IFileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T15:56:25.981Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
